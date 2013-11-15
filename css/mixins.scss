@@ -1,0 +1,11 @@
+@mixin oswald(){
+  font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin opensans(){
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+@mixin inline-block(){
+  display: inline-block;
+  *zoom: 1;
+  vertical-align: middle;
+}
