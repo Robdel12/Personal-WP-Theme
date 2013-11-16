@@ -12,6 +12,23 @@
   padding: 60px 0;
  }
 }
+@media screen and (max-width: 730px) {
+ .imgcontain .hoverdiv p{
+    margin-top: 11%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+ }
+}
+@media screen and (max-width: 730px) {
+ .portfolio-gird{
+  display: block;
+ }
+ .imgcontain .hoverdiv p{
+    margin-top: 21%;
+    font-size: 2rem;
+    line-height: 2rem;
+ }
+}
 @media screen and (max-width: 640px) {
   .blog-roll{
     .post{
@@ -34,6 +51,22 @@
   }
  }
 }
+@media screen and (max-width: 540px) {
+  body{
+    h2{
+      font-size: 2rem;
+    }
+  }
+ .about-page{
+    display: block;
+    img{
+      width: 50%;
+    }
+    .four-sixth{
+      margin-left: 0;
+    }
+  }
+}
 @media screen and (max-width: 415px) {
   .blog-roll{
     .post{
@@ -42,6 +75,27 @@
       }
     }
   }
+  .main-navigation{
+    li{
+      a{
+        font-size: 1rem;
+      }
+    }
+  }
+  .about-page{
+    display: block;
+    img{
+      width: 80%;
+    }
+    .four-sixth{
+      margin-left: 0;
+    }
+  }
+  .imgcontain .hoverdiv p{
+    margin-top: 19%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+ }
 }
 @media screen and (max-width: 400px) {
   .blog-roll{
@@ -50,6 +104,18 @@
         display: none;
       }
     }
+  }
+  .single-post{
+    h1{
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+    .post-header{
+      margin-bottom: 5px;
+    }
+  }
+  .meta{
+    display: none;
   }
 }
 @media screen and (max-width: 380px) {

@@ -108,12 +108,20 @@ body{
     .blog-left{
       flex: 1;
       align-self: center;
-      .date{
-        padding: 23px 10px;
+      .date-container{
+        height: 75px;
+        width: 75px;
+        display: block;
         background-color: $primary_color;
         color: white;
         font-weight: 700;
         border-radius: 60px;
+        .date{
+          line-height: 74px;
+          margin: 0 auto;
+          width: 80%;
+          display: block; 
+        }
       }
     }
     .blog-right{
@@ -270,6 +278,16 @@ body{
     }
   }
 }
+
+// =========================================================== Thumper ============================================================
+.thumper{
+  h1{
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 35px;
+  }
+}
+
 
 // =========================================================== Contact ============================================================
 .wpcf7{

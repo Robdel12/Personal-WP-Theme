@@ -5,8 +5,8 @@
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="post">
       <div class="blog-left">
-        <span class="date">
-          <?php the_time('M. j'); ?>
+        <span class="date-container">
+          <span class="date"><?php the_time('M. j'); ?></span>
         </span>
       </div>
       <div class="blog-right">

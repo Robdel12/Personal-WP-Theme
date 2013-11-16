@@ -54,6 +54,9 @@ table {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+strong {
+  font-weight: 700; }
+
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
@@ -128,12 +131,19 @@ body {
   .blog-roll .post .blog-left {
     flex: 1;
     align-self: center; }
-    .blog-roll .post .blog-left .date {
-      padding: 23px 10px;
+    .blog-roll .post .blog-left .date-container {
+      height: 75px;
+      width: 75px;
+      display: block;
       background-color: #057ea6;
       color: white;
       font-weight: 700;
       border-radius: 60px; }
+      .blog-roll .post .blog-left .date-container .date {
+        line-height: 74px;
+        margin: 0 auto;
+        width: 80%;
+        display: block; }
   .blog-roll .post .blog-right {
     flex: 10; }
 
@@ -293,6 +303,11 @@ body {
       font-size: 2rem;
       line-height: 2rem; }
 
+.thumper h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 35px; }
+
 .wpcf7 input, .wpcf7 textarea {
   border: 1px solid #ddd;
   padding: 8px;
@@ -316,6 +331,19 @@ footer {
 @media screen and (max-width: 770px) {
   .hero {
     padding: 60px 0; } }
+@media screen and (max-width: 730px) {
+  .imgcontain .hoverdiv p {
+    margin-top: 11%;
+    font-size: 1.5rem;
+    line-height: 1.5rem; } }
+@media screen and (max-width: 730px) {
+  .portfolio-gird {
+    display: block; }
+
+  .imgcontain .hoverdiv p {
+    margin-top: 21%;
+    font-size: 2rem;
+    line-height: 2rem; } }
 @media screen and (max-width: 640px) {
   .blog-roll .post .blog-right {
     flex: 4; } }
@@ -327,11 +355,45 @@ footer {
     font-size: 1.7rem;
     line-height: 1.7rem;
     padding: 0; } }
+@media screen and (max-width: 540px) {
+  body h2 {
+    font-size: 2rem; }
+
+  .about-page {
+    display: block; }
+    .about-page img {
+      width: 50%; }
+    .about-page .four-sixth {
+      margin-left: 0; } }
 @media screen and (max-width: 415px) {
   .blog-roll .post .blog-right {
-    flex: 3; } }
+    flex: 3; }
+
+  .main-navigation li a {
+    font-size: 1rem; }
+
+  .about-page {
+    display: block; }
+    .about-page img {
+      width: 80%; }
+    .about-page .four-sixth {
+      margin-left: 0; }
+
+  .imgcontain .hoverdiv p {
+    margin-top: 19%;
+    font-size: 1.5rem;
+    line-height: 1.5rem; } }
 @media screen and (max-width: 400px) {
   .blog-roll .post .blog-left {
+    display: none; }
+
+  .single-post h1 {
+    font-size: 2rem;
+    line-height: 2rem; }
+  .single-post .post-header {
+    margin-bottom: 5px; }
+
+  .meta {
     display: none; } }
 @media screen and (max-width: 380px) {
   .hero h1 {
