@@ -3,7 +3,7 @@ Theme Name: Robert DeLucas theme
 Author: Robert DeLuca
 Author URI: http://robert-deluca.com
 Description: One off custom theme created by the awesome coder Robert DeLuca.
-Version: 1.0
+Version: 2.0
 License: GNU General Public License
 */
 
@@ -294,3 +294,6 @@ footer{
     }
   }
 }
+
+// =========================================================== Media Queries ============================================================
+@import "media_queries"
