@@ -99,6 +99,8 @@ body {
         border-top: 4px solid white;
         transition: border .15s linear;
         -webkit-transition: border .15s linear; }
+  .main-navigation .menu {
+    padding: 0 10px; }
 
 .hero {
   background-color: #057ea6;
@@ -303,7 +305,7 @@ footer {
   footer .footer-content {
     max-width: 1140px;
     margin: 65px auto 0 auto;
-    padding: 8px 0;
+    padding: 8px 10px;
     color: white; }
     footer .footer-content a {
       color: #ddd; }
