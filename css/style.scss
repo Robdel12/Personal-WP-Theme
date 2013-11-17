@@ -104,7 +104,7 @@ body{
     border-bottom: 1px solid #ddd;
     padding: 0px 0 25px 0;
     margin: 0px 0 25px 0;
-    display: flex; //Woo!
+    @include flex-box; //Woo!
     .blog-left{
       flex: 1;
       align-self: center;
@@ -139,7 +139,7 @@ body{
     line-height: 4rem;
   }
   .post-header{
-    display: flex;
+    @include flex-box;
     margin-bottom: 15px;
   }
   .titleheader{
@@ -157,7 +157,7 @@ body{
 
 // =========================================================== Timeline ============================================================
 .about-page{
-  display: flex;
+  @include flex-box;
   margin: 20px 0;
   .two-sixth{
     flex: 2;
@@ -247,7 +247,7 @@ body{
 
 // =========================================================== Projects ============================================================
 .portfolio-gird{
-  display: flex;
+  @include flex-box;
   h2{
     font-size: 2rem;
   }
