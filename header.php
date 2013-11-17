@@ -36,7 +36,7 @@
 	<section class="hero">
 		<header>
 			<h1>Hi, I'm Robert.</h1>
-			<p>And I create online awesome</p>
+			<p>And I create online awesome.</p>
 		</header>
 	</section>
 	<section class="container">

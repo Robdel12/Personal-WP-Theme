@@ -2,7 +2,7 @@
   .blog-roll{
     .post{
       .blog-right{
-        flex: 6;
+        @include flex(6);
       }
     }
   }
@@ -33,7 +33,7 @@
   .blog-roll{
     .post{
       .blog-right{
-        flex: 4;
+        @include flex(4);
       }
     }
   }
@@ -71,7 +71,7 @@
   .blog-roll{
     .post{
       .blog-right{
-        flex: 3;
+        @include flex(3);
       }
     }
   }
@@ -135,7 +135,7 @@
   .blog-roll{
     .post{
       .blog-right{
-        flex: 2;
+        @include flex(2);
       }
     }
   }

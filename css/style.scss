@@ -106,7 +106,7 @@ body{
     margin: 0px 0 25px 0;
     @include flex-box; //Woo!
     .blog-left{
-      flex: 1;
+      @include flex(1);
       align-self: center;
       .date-container{
         height: 75px;
@@ -125,7 +125,7 @@ body{
       }
     }
     .blog-right{
-      flex: 10;
+      @include flex(10);
     }
   }
 }
@@ -143,10 +143,10 @@ body{
     margin-bottom: 15px;
   }
   .titleheader{
-    flex: 18;
+    @include flex(18);
   }
   .meta{
-    flex: 2;
+    @include flex(2);
     align-self: flex-end;
     text-align: right;
   }
@@ -160,10 +160,10 @@ body{
   @include flex-box;
   margin: 20px 0;
   .two-sixth{
-    flex: 2;
+    @include flex(2);
   }
   .four-sixth{
-    flex: 6;
+    @include flex(6);
     margin-left: 30px;
   }
 }
@@ -252,7 +252,7 @@ body{
     font-size: 2rem;
   }
   .one-third{
-    flex: 1;
+    @include flex(1);
     margin: 25px 15px;
     &:first-child{
       margin-left: 0;
