@@ -7,7 +7,7 @@ Version: 2.0
 License: GNU General Public License
 */
 
-// =========================================================== Hero ============================================================
+// =========================================================== Global ============================================================
 
 $primary_color: #057EA6;
 
@@ -33,6 +33,10 @@ body{
   p{
     line-height: 25px;
     padding: 10px 0;
+    &:empty{
+      padding: 0;
+      line-height: 0;
+    }
   }
   a{
     color: $primary_color;
@@ -42,6 +46,14 @@ body{
     max-width: 100%;
     height: auto;
   }
+}
+.alignleft{
+  float: left;
+  margin-right: 25px;
+}
+.alignright{
+  float: right;
+  margin-left: 25px;
 }
 
 // =========================================================== Hero ============================================================

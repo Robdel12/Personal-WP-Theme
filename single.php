@@ -7,9 +7,6 @@
 			<header class="titleheader">
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 			</header><!-- End Title Entry -->
-			<div class="meta">
-				<span class="date"><?php the_time('M. j'); ?></span>
-			</div>
 		</div>
 		<div class="entry">
 			<?php the_content(); ?>
