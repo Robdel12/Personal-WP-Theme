@@ -27,6 +27,10 @@ body{
     font-size: 2.5rem;
     margin: 10px 0;
   }
+  h3{
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
   h4{
     font-size: 1.4rem;
   }
@@ -46,6 +50,16 @@ body{
     max-width: 100%;
     height: auto;
   }
+  blockquote{
+    margin: 20px 0 20px 40px;
+    border-left: 4px solid #ddd;
+    padding-left: 10px;
+    font-family: arial, sans-serif;
+    color: #5C5C5C;
+    p{
+      padding: 3px 0;
+    }
+  }
 }
 .alignleft{
   float: left;
@@ -56,7 +70,7 @@ body{
   margin-left: 25px;
 }
 
-// =========================================================== Hero ============================================================
+// =========================================================== Nav ============================================================
 .main-navigation{
   padding: 15px 0;
   background-color: #068;
@@ -91,7 +105,7 @@ body{
 .hero{
   background-color: $primary_color; //Needs Color Var
   text-align: center;
-  padding: 110px 0;
+  padding: 60px 0;
   color: white;
   h1{
     font-size: 6rem;
@@ -147,20 +161,30 @@ body{
   max-width: 960px;
   margin: 0 auto;
   h1{
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 2.9rem;
+    line-height: 3.2rem;
+  }
+  h3{
+    margin: 10px 0;
+  }
+  ul{
+    margin: 4px 0 4px 45px;
+    li{
+      padding: 4px 0;
+      list-style: disc;
+    }
   }
   .post-header{
     @include flex-box;
     margin-bottom: 15px;
   }
   .titleheader{
-    @include flex(18);
-  }
-  .meta{
-    @include flex(2);
-    align-self: flex-end;
-    text-align: right;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    h1{
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
   }
 }
 .comment-wrap{
@@ -199,7 +223,14 @@ body{
   margin:0 0 1em;
   padding:0
 }
-.timeline li{background:#e2e2e2;padding:2%; border-radius:4px; list-style-type:none;margin:0 0 1em 1em;position:relative}
+.timeline li{
+  background:#e2e2e2;
+  padding:2%; 
+  border-radius:4px; 
+  list-style-type:none;
+  margin:0 0 1em 1em;
+  position:relative;
+}
 .timeline li:before{
   content: '';
   width: 0; 
@@ -212,44 +243,18 @@ body{
   top: 1.5rem;
   
 }
-.timeline time{color:#979797;display:block; font-size:0.9em; font-style:italic}
+.timeline time{
+  color:#979797;
+  display:block; 
+  font-size:0.9em; 
+  font-style:italic;
+}
 .timeline .description{
   margin-bottom:0; 
   line-height: 21px; 
   font-size: 17px;
   padding: 15px 0;
 } 
-@media (min-width: 20em){
-  .matte{float:right;width:37.5%;margin:0 0 1em 1.5em}
-}
-@media screen and (min-width: 40em){
-  .timeline{
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #f0f0f0), color-stop(49.59%, #f0f0ee), color-stop(49.6%, #e2e2e2), color-stop(49.9%, #e2e2e2), color-stop(50%, #f0f0f0));
-    background-image: -webkit-linear-gradient(left, #FFF 0%, #FFF 49.59%, #E2E2E2 49.6%, #E2E2E2 49.9%, #FFF 50%);
-    background-image: -moz-linear-gradient(left, #FFF 0%, #FFF 49.59%, #E2E2E2 49.6%, #E2E2E2 49.9%, #FFF 50%);
-    background-image: -o-linear-gradient(left, #FFF 0%,#FFF 49.59%,#e2e2e2 49.6%,#e2e2e2 49.9%,#FFF 50%);
-    background-image: linear-gradient(left, #FFF 0%,#FFF 49.59%,#e2e2e2 49.6%,#e2e2e2 49.9%,#FFF 50%);}
-    .timeline .timeline-title{margin-bottom: 0.5em}
-    .timeline img{margin-bottom:0.3em}
-    .timeline p{font-size:0.9em}
-    .timeline li{
-      width: 44%;
-      margin: 3% 3% 0;
-    }
-    .timeline li:nth-of-type(odd){
-      float: left;
-      margin: 3% 5% 0;
-    }
-    .timeline li:nth-of-type(odd):before{
-      border-top: 11px solid transparent;
-      border-bottom: 11px solid transparent;
-      border-left: 11px solid #e2e2e2;
-      border-right: none;
-      left: auto;
-      right: -0.65rem
-    }
-    .timeline li:nth-of-type(even){margin-top:-1%; float:right}
-    .timeline li:nth-of-type(2n+1){clear:both}}
 .time{
   @include oswald; 
   font-weight:300; 
