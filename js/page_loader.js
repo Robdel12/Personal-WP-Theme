@@ -5,8 +5,8 @@ function nextPage() {
   nextPageNumber++;
   var pageNumber = "http://www.robert-deluca.com/page/" + nextPageNumber;
   //Debugging
-  //console.log(nextPageNumber);
-  //console.log(pageNumber);
+  // console.log(nextPageNumber);
+  // console.log(pageNumber);
   return pageNumber;
 }
 jQuery(document).ready(function(){

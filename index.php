@@ -30,7 +30,7 @@
   <h3>ERRORRR! Something went wrong loading more posts.</h3>
 </div>
 <!-- Add the pagination functions here. -->
-<!-- <div class="nav-previous alignleft"><a href="#" id="prev_page">Older posts</a></div> -->
+<div class="nav-previous alignleft"><a href="#" id="prev_page">Older posts</a></div>
 
 <?php endif; ?>
 <?php get_footer(); ?>
